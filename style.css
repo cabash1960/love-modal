@@ -1,0 +1,129 @@
+:root {
+  --bkg-color: #dfd8d8;
+  --box: #ffffff;
+  --love: #f14647;
+  --primary: #1f272d;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "montserrat";
+  background-color: var(--bkg-color);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.love-box {
+  background-color: var(--bkg-color);
+  padding: 3rem;
+  text-align: center;
+  position: relative;
+  box-shadow: 8px 8px 16px #c6c6c6, -8px -8px 16px var(--box);
+  border-radius: 20px 50px 20px 50px;
+}
+
+.love-text {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  font-style: italic;
+  color: var(--primary);
+}
+span {
+  font-family: "bite chocolate";
+  color: var(--love);
+  margin-right: 0.2rem;
+}
+.icon {
+  width: 7.2rem;
+  height: 7.2rem;
+  position: absolute;
+  top: -2%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.love-btn {
+  border: none;
+  color: var(--box);
+  background-color: var(--love);
+  padding: 1.8rem 2.4rem;
+  border-radius: 20px 50px 20px 50px;
+  box-shadow: 8px 8px 16px #c6c6c6, -8px -8px 16px var(--box);
+
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.love-btn:active,
+.love-btn:hover {
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5), -8px -8px 16px var(--box);
+  transform: scale(0.95);
+}
+
+.modal {
+  border: none;
+  max-width: 60rem;
+  padding: 2.4rem;
+  /* 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px 50px 20px 50px;
+  background-color: var(--bkg-color);
+}
+.modal-message {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  margin-bottom: 2rem;
+  font-style: italic;
+  color: var(--primary);
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(20px);
+}
+
+.quote {
+  margin-bottom: 2rem;
+}
+
+.input-quote {
+  outline: none;
+  border: none;
+  width: 100%;
+  height: 5rem;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5), -8px -8px 16px var(--box);
+  border-radius: 45% 20% 40%;
+}
+
+.input-quote::placeholder {
+  font-size: 1.4rem;
+  font-style: italic;
+  text-align: center;
+  padding: 1.6rem;
+}
+
+@media (min-width: 480px) and (max-width: 767px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 479px) {
+  html {
+    font-size: 50%;
+  }
+}
