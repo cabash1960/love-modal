@@ -50,6 +50,7 @@ span {
 }
 
 .love-btn {
+  font-size: 1.6rem;
   border: none;
   color: var(--box);
   background-color: var(--love);
