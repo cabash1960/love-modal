@@ -22,7 +22,7 @@ async function getQuote() {
     const result = await response.json();
     loveText.textContent = result.quote;
     loveText.innerHTML = result.quote
-      .replace(/, /g, ",<br>") // break after commas
+      .replace(/, /g, ",<br>") // breaks after commas
       .replace(/love/gi, "<span>love</span>"); // highlight 'love'
 
     console.log(result);
