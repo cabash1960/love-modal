@@ -70,6 +70,7 @@ span {
 
 .modal {
   border: none;
+  width: 90%;
   max-width: 60rem;
   padding: 2.4rem;
   /* 
@@ -110,7 +111,7 @@ h2 {
 }
 
 .input-quote::placeholder {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-style: italic;
   text-align: center;
   padding: 1.6rem;
