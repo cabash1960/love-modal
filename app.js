@@ -28,7 +28,9 @@ async function getQuote() {
     console.log(result);
   } catch (error) {
     console.error("Error fetching quote:", error);
-    loveText.textContent = "An error occurred while fetching the quote.";
+    const html = `<span>Love</span>  is like a fart ... <br />
+          if you have to force it, it's probably crap.`;
+    loveText.insertAdjacentHTML("afterbegin", html);
   }
 }
 
